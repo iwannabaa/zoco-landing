@@ -1,0 +1,81 @@
+@import "master";
+
+body {
+  background: #2772D6;
+  color: #ffffff;
+}
+.main-content {
+  padding-top: 40px;
+  position: relative;
+  background: url("../img/iphone-bg.jpg") no-repeat 680px 40px;
+}
+.slides-container {
+  height: 280px;
+  .slide {
+    width: 460px;
+    height: 280px;
+    position: absolute;
+    background: $zoco-color-main;
+    opacity: 0;
+    -moz-transition: opacity .4s ease;
+    -webkit-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+
+    &.active {
+      opacity: 1;
+
+      figure{
+        opacity:1;
+        top:0;
+        -moz-transition: all .4s ease .4s;
+        -webkit-transition: all .4s ease .4s;
+        -o-transition: all .4s ease .4s;
+        transition: all .4s ease .4s;
+      }
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 56px;
+      text-transform: lowercase;
+      margin: 20px 0 10px;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    p {
+      font-weight: 200;
+      font-size: 16px;
+      margin-top: 5px;
+      width:100%;
+    }
+    figure {
+      position: absolute;
+      top: -40px;
+      margin: 0;
+      padding: 0;
+      right: -410px;
+      opacity:0;
+    }
+  }
+}
+.download-links {
+  margin: 20px 0;
+
+  a {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.footer {
+  margin-top: 100px;
+  a {
+    color: $zoco-color-main-contrast;
+  }
+}

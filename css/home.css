@@ -1,0 +1,39 @@
+@import url(normalize.css);
+* { box-sizing: border-box; }
+
+body { font-family: "pragmatica-web","helvetica", "arial", sans-serif; background: #E7E7E8; font-size: 16px; }
+
+a { text-decoration: none; }
+
+.cf:before, .cf:after { content: " "; display: table; }
+
+.cf:after { clear: both; }
+
+.wrapper { padding: 0 20px; width: 960px; margin: 0 auto; }
+
+.footer { font-size: 12px; font-weight: 200; }
+.footer .copy { float: left; }
+.footer .footer-nav { float: right; margin-right: 20px; }
+.footer .footer-nav li { list-style: none; display: block; float: left; margin-right: 5px; }
+.footer .footer-nav li:first-child::before { content: ""; }
+.footer .footer-nav li::before { content: "|"; margin-right: 5px; }
+
+body { background: #2772D6; color: #ffffff; }
+
+.main-content { padding-top: 40px; position: relative; background: url("../img/iphone-bg.jpg") no-repeat 680px 40px; }
+
+.slides-container { height: 280px; }
+.slides-container .slide { width: 460px; height: 280px; position: absolute; background: #2772d6; opacity: 0; -moz-transition: opacity .4s ease; -webkit-transition: opacity .4s ease; -o-transition: opacity .4s ease; transition: opacity .4s ease; }
+.slides-container .slide.active { opacity: 1; }
+.slides-container .slide.active figure { opacity: 1; top: 0; -moz-transition: all .4s ease .4s; -webkit-transition: all .4s ease .4s; -o-transition: all .4s ease .4s; transition: all .4s ease .4s; }
+.slides-container .slide h1 { font-weight: 300; font-size: 56px; text-transform: lowercase; margin: 20px 0 10px; }
+.slides-container .slide h2 { font-weight: 300; font-size: 18px; margin: 5px 0; }
+.slides-container .slide p { font-weight: 200; font-size: 16px; margin-top: 5px; width: 100%; }
+.slides-container .slide figure { position: absolute; top: -40px; margin: 0; padding: 0; right: -410px; opacity: 0; }
+
+.download-links { margin: 20px 0; }
+.download-links a { margin-left: 10px; }
+.download-links a:first-child { margin-left: 0; }
+
+.footer { margin-top: 100px; }
+.footer a { color: white; }

@@ -1,0 +1,128 @@
+@import "master";
+
+body {
+  border-top: solid 10px #2772D6;
+}
+.product-container {
+  margin-top: 20px;
+
+  .main-info-container {
+    width: 600px;
+    float: right;
+
+    .store-logo {
+      float: left;
+    }
+
+    .meta-info {
+      .stats {
+        float: right;
+        border-collapse: collapse;
+
+        th {
+          font-weight: 300;
+          font-size: 18px;
+          color: #6C6863;
+        }
+        td {
+          font-weight: 300;
+          font-size: 36px;
+          color: $zoco-color-main;
+        }
+        td, th {
+          padding: 0 10px;
+          text-align: center;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+        }
+        td:first-child,
+        th:first-child {
+          border-left: 0;
+        }
+        td:last-child,
+        th:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    .product-name {
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .product-info {
+      .ht {
+        color: #067EB9;
+
+        &:hover {
+          border-bottom: dotted 1px #067EB9;
+        }
+      }
+    }
+    .price {
+      font-size: 30px;
+      font-weight: 700;
+      color: $zoco-color-main;
+
+      .amount {
+        float: left;
+      }
+
+      .collection-icon {
+        display: block;
+        float: left;
+        width: 47px;
+        height: 34px;
+        margin-left: 10px;
+        background: url("../img/icon-collection.png");
+      }
+    }
+    .collection-thumbs {
+      img {
+        display: block;
+        float: left;
+        margin-left: 5px;
+
+        &:first-of-type {
+          margin-left:0;
+        }
+      }
+    }
+    .action-links {
+      padding-top: 35px;
+      a {
+        display: block;
+        float: left;
+        height: 60px;
+        text-indent: -9999px;
+      }
+      .link-home {
+        background: #ffffff url("../img/zoco-logo-mini.png") no-repeat center;
+        width: 140px;
+      }
+      .link-iphone {
+        background: #3086ED url("../img/download-iphone-mini.jpg") no-repeat center;
+        width: 230px;
+      }
+      .link-android {
+        background: #1E5EB1 url("../img/download-android-mini.jpg") no-repeat center;
+        width: 230px;
+      }
+    }
+  }
+  .main-image-container {
+    float: left;
+
+    img {
+      display: block;
+    }
+  }
+}
+.footer {
+  margin-top: 20px;
+  color: $zoco-color-main;
+  .footer-nav{
+    a {
+      color: $zoco-color-main;
+    }
+  }
+}

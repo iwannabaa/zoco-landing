@@ -1,0 +1,19 @@
+@import url(normalize.css);
+* { box-sizing: border-box; }
+
+body { font-family: "pragmatica-web","helvetica", "arial", sans-serif; background: #E7E7E8; font-size: 16px; }
+
+a { text-decoration: none; }
+
+.cf:before, .cf:after { content: " "; display: table; }
+
+.cf:after { clear: both; }
+
+.wrapper { padding: 0 20px; width: 960px; margin: 0 auto; }
+
+.footer { font-size: 12px; font-weight: 200; }
+.footer .copy { float: left; }
+.footer .footer-nav { float: right; margin-right: 20px; }
+.footer .footer-nav li { list-style: none; display: block; float: left; margin-right: 5px; }
+.footer .footer-nav li:first-child::before { content: ""; }
+.footer .footer-nav li::before { content: "|"; margin-right: 5px; }

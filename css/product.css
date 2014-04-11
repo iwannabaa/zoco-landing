@@ -1,0 +1,49 @@
+@import url(normalize.css);
+* { box-sizing: border-box; }
+
+body { font-family: "pragmatica-web","helvetica", "arial", sans-serif; background: #E7E7E8; font-size: 16px; }
+
+a { text-decoration: none; }
+
+.cf:before, .cf:after { content: " "; display: table; }
+
+.cf:after { clear: both; }
+
+.wrapper { padding: 0 20px; width: 960px; margin: 0 auto; }
+
+.footer { font-size: 12px; font-weight: 200; }
+.footer .copy { float: left; }
+.footer .footer-nav { float: right; margin-right: 20px; }
+.footer .footer-nav li { list-style: none; display: block; float: left; margin-right: 5px; }
+.footer .footer-nav li:first-child::before { content: ""; }
+.footer .footer-nav li::before { content: "|"; margin-right: 5px; }
+
+body { border-top: solid 10px #2772D6; }
+
+.product-container { margin-top: 20px; }
+.product-container .main-info-container { width: 600px; float: right; }
+.product-container .main-info-container .store-logo { float: left; }
+.product-container .main-info-container .meta-info .stats { float: right; border-collapse: collapse; }
+.product-container .main-info-container .meta-info .stats th { font-weight: 300; font-size: 18px; color: #6C6863; }
+.product-container .main-info-container .meta-info .stats td { font-weight: 300; font-size: 36px; color: #2772d6; }
+.product-container .main-info-container .meta-info .stats td, .product-container .main-info-container .meta-info .stats th { padding: 0 10px; text-align: center; border-left: 1px solid black; border-right: 1px solid black; }
+.product-container .main-info-container .meta-info .stats td:first-child, .product-container .main-info-container .meta-info .stats th:first-child { border-left: 0; }
+.product-container .main-info-container .meta-info .stats td:last-child, .product-container .main-info-container .meta-info .stats th:last-child { border-right: 0; }
+.product-container .main-info-container .product-name { font-size: 28px; font-weight: 400; }
+.product-container .main-info-container .product-info .ht { color: #067EB9; }
+.product-container .main-info-container .product-info .ht:hover { border-bottom: dotted 1px #067EB9; }
+.product-container .main-info-container .price { font-size: 30px; font-weight: 700; color: #2772d6; }
+.product-container .main-info-container .price .amount { float: left; }
+.product-container .main-info-container .price .collection-icon { display: block; float: left; width: 47px; height: 34px; margin-left: 10px; background: url("../img/icon-collection.png"); }
+.product-container .main-info-container .collection-thumbs img { display: block; float: left; margin-left: 5px; }
+.product-container .main-info-container .collection-thumbs img:first-of-type { margin-left: 0; }
+.product-container .main-info-container .action-links { padding-top: 35px; }
+.product-container .main-info-container .action-links a { display: block; float: left; height: 60px; text-indent: -9999px; }
+.product-container .main-info-container .action-links .link-home { background: white url("../img/zoco-logo-mini.png") no-repeat center; width: 140px; }
+.product-container .main-info-container .action-links .link-iphone { background: #3086ed url("../img/download-iphone-mini.jpg") no-repeat center; width: 230px; }
+.product-container .main-info-container .action-links .link-android { background: #1e5eb1 url("../img/download-android-mini.jpg") no-repeat center; width: 230px; }
+.product-container .main-image-container { float: left; }
+.product-container .main-image-container img { display: block; }
+
+.footer { margin-top: 20px; color: #2772d6; }
+.footer .footer-nav a { color: #2772d6; }

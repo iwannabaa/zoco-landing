@@ -1,0 +1,54 @@
+@import "normalize.css";
+@import "variables";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "pragmatica-web","helvetica", "arial", sans-serif;
+  background: #E7E7E8;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.wrapper {
+  padding: 0 20px;
+  width: 960px;
+  margin: 0 auto;
+}
+.footer {
+  font-size: 12px;
+  font-weight: 200;
+
+  .copy {
+    float: left;
+  }
+  .footer-nav {
+    float: right;
+    margin-right:20px;
+
+    li {
+      list-style: none;
+      display: block;
+      float: left;
+      margin-right: 5px;
+
+      &:first-child::before{
+        content: "";
+      }
+
+      &::before {
+        content: "|";
+        margin-right: 5px;
+      }
+    }
+  }
+}
